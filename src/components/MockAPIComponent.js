@@ -12,24 +12,6 @@ const APIDataComponent = ({
   apiData,
   exception
 }) => {
-  const options = {
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: true,
-    dotsContainer: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 3
-      }
-    }
-  };
   return (
     <>
       <div className="CustomComponent">
@@ -42,7 +24,19 @@ const APIDataComponent = ({
                 </div>
                 <React.Fragment>
                   <div style={{ overflow: "hidden" }}>
-                    <OwlCarousel options={options}>
+                    <OwlCarousel
+                      responsive={{
+                        0: {
+                          items: 1
+                        },
+                        600: {
+                          items: 3
+                        },
+                        1000: {
+                          items: 3
+                        }
+                      }}
+                    >
                       {apiData.length === 0 || exception
                         ? "No records to show.."
                         : apiData.slice(0, 10).map((item, i) => {

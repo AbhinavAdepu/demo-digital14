@@ -46,10 +46,13 @@ html[class*="translated-ltr"] .container {
   margin-left: auto;
 }
 @media only screen and (max-width: 768px) {
+  .boxblock__imgresponsive {
+    height: 400px;
+  }
   .boxblock {
-    &__displayText{
-      font-size: 2em;
-      padding: 1.5em 0em;
+    &__displayText {
+      font-size: 12px;
+      padding: 72px 0em;
     }
   }
   .promo-wrap .Promo-section {
@@ -96,7 +99,7 @@ html[class*="translated-ltr"] .container {
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .boxblock {
-    &__displayText{
+    &__displayText {
       font-size: 2.5rem !important;
       padding: 1.5em 0em;
     }

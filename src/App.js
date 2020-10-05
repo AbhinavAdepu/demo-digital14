@@ -37,8 +37,8 @@ const App = () => {
         <div className="App">
           <Header />
           <BoxContentWithBG
-            upperText="Phasellus gravida magna ac sapien convallis gravida."
-            lowerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            upperText="Phasellus gravida magna sapien convallis."
+            lowerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
           <PromoComponentBG
             upperText={COMMON_CONSTANTS.upperText}
